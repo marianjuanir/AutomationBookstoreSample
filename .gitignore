@@ -1,0 +1,12 @@
+storageState/
+test-results/
+playwright-report/
+node_modules/
+package-lock.json
+
+
+# compiled output
+*.js
+*.js.map
+tests-out/package.json
+tests-out/tsconfig.json
