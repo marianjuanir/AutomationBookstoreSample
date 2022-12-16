@@ -16,8 +16,7 @@ test.describe('@Sample Sample Spec File', async () => {
             throw new Error(error);
         }
         finally {
-            await test.step('Cleanup: delete created course application', async () => {
-            });
+            // add clean-up code here
         }        
     });
 })
