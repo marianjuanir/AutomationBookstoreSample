@@ -27,4 +27,5 @@ jobs:
     - name: npm install, build and test
       run: |
         npm install
+        npx playwright install   
         npm run all
