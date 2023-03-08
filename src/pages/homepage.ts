@@ -11,7 +11,7 @@ export class Homepage extends BasePageObject {
 
     async enterTextInSearchField(paramStrText: string): Promise<void>{
         await this.textField_Search.type(paramStrText);
-        expect(await this.textField_Search.inputValue()).toMatch(paramStrText);
+        expect(await this.textField_Search.inputValue()).toContain(paramStrText)
     }
 
     async verifyBooksCount(paramBooksCount: number): Promise<void>{
