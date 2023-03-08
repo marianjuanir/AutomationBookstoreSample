@@ -19,7 +19,38 @@ const playwright: PlaywrightTestConfig = {
                 ...devices['Desktop Chrome'],
                 browserName: 'chromium'
             },
-        }
+        },
+        {
+            name: 'ExtraLargeDesktop_Chrome',
+            use: {
+                ...devices['Desktop Firefox'],
+                browserName: 'chromium'
+            },
+        },
+        {
+            name: 'MediumDesktopMobile',
+            use: {
+                ...devices['iPad Mini'],
+                browserName: 'webkit'
+            },
+        },
+
+        {
+            name: 'SmallMobile',
+            use: {
+                ...devices['Galaxy Tab S4'],
+                browserName: 'chromium'
+            },
+        },
+
+        //mobile
+        {
+            name: 'ExtraSmallMobile_Galaxy',
+            use: {
+                ...devices['Galaxy S9+'], //320
+                browserName: 'chromium'
+            }
+        } 
     ]
 };
 
